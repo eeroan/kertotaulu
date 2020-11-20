@@ -1,6 +1,7 @@
 body {
   font: 20px Helvetica, serif;
   text-align: center;
+  background: #bff9ff;
 }
 div {
   margin-top: 1em;
@@ -12,6 +13,11 @@ div {
 .vastaus {
   width: 2em;
   font-size: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 7px 15px;
+  display: inline-block;
+  outline: none;
 }
 .kysymys {
   text-align: center;
@@ -21,10 +27,10 @@ form {
   display: inline-block;
 }
 .tulos {
-  color: darkred;
+  color: #e00;
 }
 .correct {
-  color: green;
+  color: #00ce00;
 }
 .pisteet {
 }
