@@ -1,0 +1,27 @@
+body {
+  font: 20px Helvetica, serif;
+}
+.lauseke {
+  display: inline-block;
+  width: 3em;
+}
+.vastaus {
+  width: 2em;
+  font-size: 40px;
+}
+.kysymys {
+  text-align: center;
+  font-size: 40px;
+}
+form {
+  display: inline-block;
+}
+.tulos {
+  color: darkred;
+}
+.correct {
+  color: green;
+}
+.pisteet {
+  margin-top: 5em;
+}
