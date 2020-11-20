@@ -29,11 +29,12 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   console.log('sdf')
   let isCorrect = vastaus.value === String(oikea)
-  tulos.innerHTML = isCorrect ? 'Oikein' : `Väärin, ${eka} &times; ${toka} = ${oikea}`
+  tulos.innerHTML = isCorrect ? 'Oikein!' : `Väärin, ${eka} &times; ${toka} = ${oikea}`
   tulos.classList.toggle('correct', isCorrect)
   count++
   score+= isCorrect ? 1 : 0
-  pisteet.innerHTML = score + ' / ' + count
+  pisteet.innerHTML = `<span class="omat${isCorrect ? ' pulse' : ''}">${score}</span> / ${count}`
+
   alusta()
 })
 

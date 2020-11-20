@@ -1,5 +1,9 @@
 body {
   font: 20px Helvetica, serif;
+  text-align: center;
+}
+div {
+  margin-top: 1em;
 }
 .lauseke {
   display: inline-block;
@@ -23,5 +27,17 @@ form {
   color: green;
 }
 .pisteet {
-  margin-top: 5em;
+}
+
+.pulse {
+  display: inline-block;
+  animation-name: pulse_animation;
+  animation-duration: 500ms;
+  transform-origin:50% 50%;
+  animation-timing-function: linear;
+}
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(2); }
+  100% { transform: scale(1); }
 }
