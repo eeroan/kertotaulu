@@ -8,10 +8,16 @@
 <body>
 <h3>Laske</h3>
 <div class="kysymys">
-  <span class="lauseke">1 * 1</span> = <form><input type="number" class="vastaus" autofocus /></form>
+  <span class="lauseke">1 * 1</span> =
+  <form><input type="number" class="vastaus" autofocus/></form>
 </div>
 <div class="tulos"></div>
-<div class='pisteet'></div>
+<div style="display: inline-flex">
+  <div class='graafi hidden'>
+    <div class="palkki"></div>
+  </div>
+  <div class='pisteet'></div>
+</div>
 <script src="kertotaulu.js"></script>
 </body>
 </html>

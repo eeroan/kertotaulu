@@ -8,7 +8,7 @@ div {
 }
 .lauseke {
   display: inline-block;
-  width: 3em;
+  width: 4em;
 }
 .vastaus {
   width: 2em;
@@ -34,7 +34,25 @@ form {
 }
 .pisteet {
 }
-
+.graafi {
+  display: inline-block;
+  width:200px;
+  height:20px;
+  background: #fff;
+  position:relative;
+  margin-right: .5em;
+}
+.palkki {
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  background: darkblue;
+  margin:0;
+}
+.hidden {
+  display: none;
+}
 .pulse {
   display: inline-block;
   animation-name: pulse_animation;

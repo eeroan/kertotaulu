@@ -4,6 +4,8 @@ const vastaus = document.querySelector('.vastaus')
 const form = document.querySelector('form')
 const tulos = document.querySelector('.tulos')
 const pisteet = document.querySelector('.pisteet')
+const graafi = document.querySelector('.graafi')
+const palkki = document.querySelector('.palkki')
 
 function arvo() {
   return Math.floor((Math.random() * 10) + 1)
@@ -34,7 +36,8 @@ form.addEventListener('submit', e => {
   count++
   score+= isCorrect ? 1 : 0
   pisteet.innerHTML = `<span class="omat${isCorrect ? ' pulse' : ''}">${score}</span> / ${count}`
-
+  graafi.classList.remove('hidden')
+  palkki.style.width = (score * 100 / count)+'%'
   alusta()
 })
 
