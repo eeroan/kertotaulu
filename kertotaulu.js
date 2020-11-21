@@ -6,6 +6,7 @@ const tulos = document.querySelector('.tulos')
 const pisteet = document.querySelector('.pisteet')
 const graafi = document.querySelector('.graafi')
 const palkki = document.querySelector('.palkki')
+const nappi = document.querySelector('button')
 
 function arvo() {
   return Math.floor((Math.random() * 10) + 1)
@@ -41,3 +42,7 @@ form.addEventListener('submit', e => {
   alusta()
 })
 
+nappi.addEventListener('mousedown', e => {
+  e.preventDefault()
+  console.log(e)
+})
