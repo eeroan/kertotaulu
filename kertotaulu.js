@@ -1,4 +1,3 @@
-const kysymys = document.querySelector('.kysymys')
 const lauseke = document.querySelector('.lauseke')
 const vastaus = document.querySelector('.vastaus')
 const form = document.querySelector('form')
@@ -30,19 +29,17 @@ alusta()
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  console.log('sdf')
-  let isCorrect = vastaus.value === String(oikea)
+  const isCorrect = vastaus.value === String(oikea)
   tulos.innerHTML = isCorrect ? 'Oikein!' : `Väärin, ${eka} &times; ${toka} = ${oikea}`
   tulos.classList.toggle('correct', isCorrect)
   count++
-  score+= isCorrect ? 1 : 0
+  score += isCorrect ? 1 : 0
   pisteet.innerHTML = `<span class="omat${isCorrect ? ' pulse' : ''}">${score}</span> / ${count}`
   graafi.classList.remove('hidden')
-  palkki.style.width = (score * 100 / count)+'%'
+  palkki.style.width = (score * 100 / count) + '%'
   alusta()
 })
 
 nappi.addEventListener('mousedown', e => {
   e.preventDefault()
-  console.log(e)
 })
